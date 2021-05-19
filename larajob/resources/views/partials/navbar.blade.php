@@ -1,8 +1,9 @@
-<header class="flex justify-between items-center py-5 border-b border-green-500 mb-8">
+<header class="flex justify-between items-center py-5 mb-8">
   <div>
     <a href="/">LOGO</a>
   </div>
   <nav>
+    <livewire:search />
     <a href="{{ route('jobs.index') }}" class="hover:text-green-500">No missions</a>
     @guest
     <a href="{{ route('login') }}" class="ml-4 hover:text-green-500">Se connectez</a>
