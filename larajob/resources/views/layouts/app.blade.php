@@ -6,12 +6,16 @@
 
         <title>LaraJob</title>
         <link href="/css/app.css" rel="stylesheet">
+        <style>
+          [x-cloak] { display: none; }
+        </style>
         @livewireStyles
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
     </head>
     <body class="bg-gray-200">
       <div class="container mx-auto px-4">
       @include('partials.navbar')
+      <livewire:flash />
       @yield('content')
       </div>
 
