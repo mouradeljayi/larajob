@@ -19,6 +19,11 @@ class Job extends Model
       return $this->belongsToMany(User::class);
     }
 
+    public function proposals()
+    {
+      return $this->hasMany(Proposal::class);
+    }
+
     public function isLiked()
     {
       if(auth()->check()) {

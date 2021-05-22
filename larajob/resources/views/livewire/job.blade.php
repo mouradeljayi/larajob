@@ -8,7 +8,7 @@
     </div>
     <div class="flex items-center">
       <span class="h-2 w-2 bg-green-400 rounded-full mr-1 mt-1"></span>
-      <a href="#">Consulter la mission</a>
+      <a href="{{ route('jobs.show', $job->id) }}">Consulter la mission</a>
     </div>
     <span class="text-sm text-gray-600 font-bold">{{ number_format($job->price / 100, 2, ',', '') }} €</span>
   </div>
